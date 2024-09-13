@@ -20,14 +20,14 @@
                                 <rect key="frame" x="0.0" y="99" width="393" height="284"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9V-f0-jTZ">
-                                        <rect key="frame" x="0.0" y="59.666666666666657" width="373" height="59.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                                        <rect key="frame" x="0.0" y="129" width="373" height="129"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="65"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5+2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPR-uD-7hb">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="59.666666666666664"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="129"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="53"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -47,11 +47,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HGB-gf-yRa">
                                 <rect key="frame" x="0.0" y="383" width="393" height="435"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bEA-Yp-nx6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bEA-Yp-nx6">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFZ-DZ-a7b">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="87"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="AC">
@@ -63,10 +63,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn9-V7-DYB">
-                                                <rect key="frame" x="131" y="0.0" width="131" height="87"/>
+                                                <rect key="frame" x="117" y="0.0" width="198" height="87"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                <buttonConfiguration key="configuration" style="plain" title="Borrar">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
@@ -75,7 +75,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnE-aC-G3u">
-                                                <rect key="frame" x="262" y="0.0" width="131" height="87"/>
+                                                <rect key="frame" x="315" y="0.0" width="78" height="87"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="÷">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
@@ -286,20 +286,30 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculadora Xande" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-NY-N6b">
+                                <rect key="frame" x="105" y="59" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HGB-gf-yRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0D9-Nq-9N3"/>
                             <constraint firstItem="HGB-gf-yRa" firstAttribute="top" secondItem="Bn6-r3-YYv" secondAttribute="bottom" id="2bP-1C-pg1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HGB-gf-yRa" secondAttribute="bottom" id="39H-RJ-zj1"/>
+                            <constraint firstItem="Bn6-r3-YYv" firstAttribute="top" secondItem="kaC-NY-N6b" secondAttribute="bottom" constant="19" id="EHq-cS-Of4"/>
                             <constraint firstAttribute="height" secondItem="Bn6-r3-YYv" secondAttribute="height" multiplier="3" id="HPA-y5-fLd"/>
+                            <constraint firstItem="kaC-NY-N6b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="McK-ht-I5Q"/>
                             <constraint firstItem="Bn6-r3-YYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="cS2-iO-R8d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HGB-gf-yRa" secondAttribute="trailing" id="ea5-x7-Epc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bn6-r3-YYv" secondAttribute="trailing" id="ebh-HO-aGj"/>
                             <constraint firstAttribute="width" secondItem="Bn6-r3-YYv" secondAttribute="width" id="gJd-CH-sB1"/>
                             <constraint firstItem="Bn6-r3-YYv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333333" id="gyZ-Z3-7eE"/>
                             <constraint firstItem="Bn6-r3-YYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jUe-2Y-52c"/>
+                            <constraint firstItem="Bn6-r3-YYv" firstAttribute="leading" secondItem="kaC-NY-N6b" secondAttribute="trailing" constant="-299" id="njY-jP-nk2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kaC-NY-N6b" secondAttribute="bottom" constant="738" id="pzR-jJ-yCi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -309,13 +319,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
