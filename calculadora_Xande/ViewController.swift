@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var CalculadoraTrabajo: UILabel!
     @IBOutlet weak var CalculadoraResultado: UILabel!
     
-    var trabajos:String = ""
+    var problema: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         LimpiarTodo()
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     func LimpiarTodo(){
-        trabajos = ""
+        problema = ""
         CalculadoraTrabajo.text = ""
         CalculadoraResultado.text = ""
         
@@ -33,15 +33,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Borrar(_ sender: Any) {
-        if(!trabajos.isEmpty){
-            trabajos.removeLast()
-            CalculadoraTrabajo.text = trabajos
+        if(!problema.isEmpty){
+            problema.removeLast()
+            CalculadoraTrabajo.text = problema
         }
     }
     
     func agregarAlTrabajo(value: String){
-        trabajos = trabajos + value
-        CalculadoraTrabajo.text = trabajos
+        problema = problema + value
+        CalculadoraTrabajo.text = problema
     }
     
     @IBAction func Porcentaje(_ sender: Any) {
@@ -65,9 +65,9 @@ class ViewController: UIViewController {
     @IBAction func Igual(_ sender: Any) {
         
         if(EntradaValida()){
-            //aqui voy a checar lo de como sacar los porcentajes, con esto batalle un buen rato jaja
-            let checarResultadoDePorcentaje = trabajos.replacingOccurrences(of: "%", with: "*0.01")
-            let expresion = NSExpression(format: trabajos)
+            //aqui voy a checar lo de como sacar los porcentajes, con esto batalle un buen rato y mejor lo quite jaja
+            let checarResultadoDePorcentaje = problema.replacingOccurrences(of: "%", with: "*0.01")
+            let expresion = NSExpression(format: problema)
             let result = expresion.expressionValue(with: nil, context: nil) as! Double
             let resultString = formatoDeResultado(result: result)
             CalculadoraResultado.text = resultString
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         var count = 0
         var funcCharIndexes = [Int]()
         
-        for char in trabajos
+        for char in problema
         {
             if (caracteresEspeciales(char: char)){
                 funcCharIndexes.append(count)
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
             if(index == 0){
                 return false
             }
-            if(index == trabajos.count - 1){
+            if(index == problema.count - 1){
                 return false
             }
             if(anterior != -1){
